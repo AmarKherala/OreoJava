@@ -1,0 +1,6 @@
+# ignore .env
+.env
+
+# ignore test and target
+test
+target
