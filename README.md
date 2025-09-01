@@ -13,7 +13,7 @@
 Hi, everyone.
 I'm Ammar, mainly known as "amaroreo" in disocrd.
 
-Oreo.JAVA is a self-hosted bot made wirh ❤️ using Java and [JDA](https://github.com/discord-jda/JDA), the code is mini as of right now because i lost the old code, baha.
+Oreo.JAVA is a self-hosted bot made with ❤️ using Java and [JDA](https://github.com/discord-jda/JDA), the code is mini as of right now because i lost the old code, baha.
 
 ## Cloning the repo and contirbution information
 Feel free to contirbute anything, matter fact I'd LOVE it if you did.
