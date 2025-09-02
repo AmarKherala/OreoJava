@@ -18,7 +18,7 @@ public class botinfo implements commandInterface {
 	@Override
 	public void executeSlash(SlashCommandInteractionEvent event) {
 	// enough with the fancy embeds ugh..they became boring :(
-        event.reply("HI, Its oreo.java speaking.\n- Bot repository : \n you can look through my source code and information [here](https://github.com/AmarKherala/OreoJava)");
+        event.reply("HI, Its oreo.java speaking.\n- Bot repository : \n you can look through my source code and information [here](https://github.com/AmarKherala/OreoJava)").queue();
 
 	}
     
