@@ -16,23 +16,25 @@ import okhttp3.Response;
 
 public class gary {
     private static final OkHttpClient cl = new OkHttpClient();
+
     @SuppressWarnings("CallToPrintStackTrace")
-    public String fetchGary(String url){
+    public String fetchGary(String url) {
 
-       Request req = new Request.Builder().url(url).build();
+        Request req = new Request.Builder().url(url).build();
 
-       try (Response res = cl.newCall(req).execute()){
+        try (Response res = cl.newCall(req).execute()) {
 
-      if (res.body()==null) return null;
+            if (res.body() == null)
+                return null;
 
-      String json = res.body().string();
+            String json = res.body().string();
 
-      JSONObject obj = new JSONObject(json);
+            JSONObject obj = new JSONObject(json);
 
-      return obj.get("url").toString();
-       } catch (Exception e){
-        e.printStackTrace();
-        return null;
-       }
+            return obj.get("url").toString();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return null;
+        }
     }
 }
