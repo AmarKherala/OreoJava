@@ -2,6 +2,7 @@ package net.amar;
 
 import java.util.EnumSet;
 
+import net.amar.listener.command;
 import net.amar.listener.message;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -25,7 +26,8 @@ public class main {
     .setIdle(true)
     .enableIntents(EnumSet.allOf(GatewayIntent.class))
     .addEventListeners(
-        new message()
+        new message(),
+        new command()
     )
     .build();
       } catch (Exception e){
