@@ -4,3 +4,8 @@
 # ignore test and target
 test
 target
+
+# ignore local files
+# to make the repo clean
+out
+lib

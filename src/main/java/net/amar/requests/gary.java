@@ -15,7 +15,7 @@ import okhttp3.Response;
  */
 
 public class gary {
-    private static OkHttpClient cl = new OkHttpClient();
+    private static final OkHttpClient cl = new OkHttpClient();
     @SuppressWarnings("CallToPrintStackTrace")
     public String fetchGary(String url){
 
