@@ -25,5 +25,5 @@ Simple, just having a bot for my server. And learn more about java logic along t
 I intented to create the bot for funsies, when i first heard about JDA i was like "i have to get into this libary ASAP!" and i love what I'm doing honestly!
 ## Thanks to some people
 - Whales, really the only person who motivates me and the only one who tests my stuoud Java projects.
-
+- Bluelight, for providing images of [Naoko](https://github.com/AmarKherala/OreoJava/blob/main/src%2Fmain%2Fres%2Fnaoko.json) :3.
 - Uptighupperlabs, for re-centering the widgets.
