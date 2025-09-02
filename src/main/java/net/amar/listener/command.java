@@ -6,7 +6,7 @@ import java.util.Map;
 import org.jetbrains.annotations.NotNull;
 
 import net.amar.commandz.commandInterface;
-import net.amar.commandz.infoz.serverinfo;
+import net.amar.commandz.infoz.*;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -16,6 +16,7 @@ public class command extends ListenerAdapter{
 
     public command(){
     commands.put("serverinfo", new serverinfo());
+    commands.put("botinfo", new botinfo());
     }
     @Override
     public void onSlashCommandInteraction(@NotNull SlashCommandInteractionEvent event){

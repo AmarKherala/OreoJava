@@ -46,7 +46,8 @@ public class main {
 public static void addCommands(){
     jda.updateCommands()
     .addCommands(
-        Commands.slash("serverinfo","get info about server")
+        Commands.slash("serverinfo","get info about server"),
+        Commands.slash("botinfo","info about the bot")
     ).queue(success -> log.info("Commands loaded successfully"), failuer -> log.error("Failed to load commands"));
 }
 }
