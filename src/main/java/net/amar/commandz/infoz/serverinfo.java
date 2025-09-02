@@ -38,8 +38,8 @@ public class serverinfo implements commandInterface {
          LocalDate created = g.getTimeCreated().toLocalDate();
 
          // building embed
-         em.setTitle("Information about : %s",name);
-         em.setDescription("## Server owner: " +owner+ "\n ## Server ID:" + id + "\n ## Server creation date: "+created+" \n ## Server member count: " + members);
+         em.setTitle("Information about : " + name);
+         em.setDescription("### owner: \n" +owner.getAsMention()+ "\n### ID:\n" + id + "\n### creation date: \n"+created+" \n### member count: \n" + members);
          em.setThumbnail(icon);
          em.setFooter("Requested by: " + u.getName(), u.getAvatarUrl());
          em.setColor(Color.BLUE);
