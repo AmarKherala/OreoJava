@@ -19,3 +19,5 @@ If you cloned the repo, make sure to folloe the .env.exapmle file [righ here](ht
 
 ## Thanks to some people
 Whales, really the only person eho motivates me and the only one who tests my stuoud Java projects.
+
+Uptighupperlabs, for re-centering the widgets.
