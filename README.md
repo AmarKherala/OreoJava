@@ -1,11 +1,9 @@
-[![Discord](https://img.shields.io/badge/Discord-Join%20Chat-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/4s9YUyJaSW)
-
-![JDA](https://img.shields.io/badge/JDA-Discord%20API-5865F2?style=for-the-badge&logo=java&logoColor=white)
-
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-
-![Maven](https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+<div align="center">
+  <img alt="Discord" src="https://img.shields.io/discord/1287429014067085312?style=for-the-badge&link=https%3A%2F%2Fdiscord.gg%2F4s9YUyJaSW">
+  <img alt="JDA" src="https://img.shields.io/badge/JDA-Discord%20API-5865F2?style=for-the-badge&logo=java&logoColor=white">
+  <img alt="Java" src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white">
+  <img alt="Maven" src="https://img.shields.io/badge/Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white">
+</div>
 
 ## Right now there aren't any features the bot provides, due to loss of old code.
 
