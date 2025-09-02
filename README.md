@@ -17,7 +17,7 @@ Oreo.JAVA is a self-hosted bot made with ❤️ using Java and [JDA](https://git
 - Contirbuting:
 Feel free to contirbute anything, matter fact I'd LOVE it if you did.
 - Cloning: 
-If you cloned the repo, make sure to folloe the .env.exapmle file [righ here](https://github.com/AmarKherala/OreoJava/blob/main/src%2Fmain%2Fres%2F.env.example) to be able to get your bot running with  this code.
+If you cloned the repo, make sure to folloe the .env.exapmle file [right here](https://github.com/AmarKherala/OreoJava/blob/main/src%2Fmain%2Fres%2F.env.example) to be able to get your bot running with  this code.
 ## Goals and Intensions
 - Golas:
 Simple, just having a bot for my server. And learn more about java logic along the way.
