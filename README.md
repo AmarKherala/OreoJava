@@ -18,6 +18,6 @@ Feel free to contirbute anything, matter fact I'd LOVE it if you did.
 If you cloned the repo, make sure to folloe the .env.exapmle file [righ here](https://github.com/AmarKherala/OreoJava/blob/main/src%2Fmain%2Fres%2F.env.example) to be able to get your bot running  this code.
 
 ## Thanks to some people
-Whales, really the only person eho motivates me and the only one who tests my stuoud Java projects.
+Whales, really the only person who motivates me and the only one who tests my stuoud Java projects.
 
 Uptighupperlabs, for re-centering the widgets.
