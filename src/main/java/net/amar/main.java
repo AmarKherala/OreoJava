@@ -15,7 +15,7 @@ public class main {
     private static JDA jda;
 
     public static void main(String[] args) throws InterruptedException {
-      String botToken = token.getToken();
+      String botToken = envload.getToken();
       if (botToken.isEmpty()){
         log.warn("Failed to load bot token, breaking....");
         return;

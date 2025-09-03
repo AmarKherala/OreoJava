@@ -1,27 +1,28 @@
 package net.amar.listener;
 
+import net.amar.envload;
 import net.amar.requests.gary;
 import net.amar.requests.naoko;
 import net.dv8tion.jda.api.events.message.MessageReceivedEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
-
 public class message extends ListenerAdapter {
 
   private final gary g = new gary();
   private final naoko n = new naoko();
+  private final String prefix = envload.getPrefix();
 
   @Override
   public void onMessageReceived(MessageReceivedEvent event) {
     String userMessage = event.getMessage().getContentRaw();
 
-    if (userMessage.equalsIgnoreCase("ogary")) {
+    if (userMessage.equalsIgnoreCase(prefix+"gary")) {
       event.getChannel().sendMessage(gary()).queue();
     }
 
-    if (userMessage.equalsIgnoreCase("ogoober")) {
+    if (userMessage.equalsIgnoreCase(prefix+"goober")) {
       event.getChannel().sendMessage(goober()).queue();
     }
-    if (userMessage.equalsIgnoreCase("onaoko")) {
+    if (userMessage.equalsIgnoreCase(prefix+"naoko")) {
       event.getChannel().sendMessage(n.randomNaokoImage()).queue();
     }
   }
