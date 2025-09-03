@@ -19,7 +19,7 @@ public class botinfo implements commandInterface {
 	public void executeSlash(SlashCommandInteractionEvent event) {
 		// enough with the fancy embeds ugh..they became boring :(
 		event.reply(
-				"HI, Its oreo.java speaking.\n- Bot repository : \n you can look through my source code and information [here](https://github.com/AmarKherala/OreoJava)")
+				"Hi, Its oreo.java speaking.\n everything you need to know about me is here:\n- [Bot repository](https://github.com/AmarKherala/OreoJava)")
 				.queue();
 
 	}
