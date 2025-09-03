@@ -10,6 +10,6 @@ public class envload {
     }
 
     public static String getPrefix(){
-        return load.get("PREFIX");
+        return load.get("BOT_PREFIX");
     }
 }
