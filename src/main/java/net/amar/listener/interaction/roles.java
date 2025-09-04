@@ -28,16 +28,18 @@ public class roles extends ListenerAdapter {
         "1401951980611702925",
         "1307366663133597726");
     String roleId = event.getValues().get(0);
-    Role role = g.getRoleById(roleId);
     List<Role> memberRoles = new ArrayList<>(member.getRoles());
+
+    if (!roleId.equals("0")){
+    Role role = g.getRoleById(roleId);
     memberRoles.removeIf(r -> roles.contains(r.getId()));
     memberRoles.add(role);
     event.deferReply(true).queue(hook -> g.modifyMemberRoles(member, memberRoles).queue(
         success -> event.getHook().sendMessage("Color added successfully!").setEphemeral(true),
         failure -> event.getHook().sendMessage("Failed to add color.").setEphemeral(true)));
-
+    }
     // remove all colors
-    if (roleId.equals("0")) {
+    else {
       event.deferReply(true)
           .queue(hook -> g.modifyMemberRoles(member, memberRoles).queue(
               success -> event.getHook().sendMessage("All colors removed!").setEphemeral(true),
