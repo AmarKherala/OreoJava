@@ -16,7 +16,7 @@ public class rolesSelectMenu {
      .addOption("PURPLE", "1401951980611702925", Emoji.fromUnicode("🟪"))
      .addOption("PINK", "1305880394335522887", Emoji.fromUnicode("💓"))
      .addOption("CATGIRL", "1307366663133597726", Emoji.fromUnicode("🐱"))
-     .addOption("REMOVE", "remove", Emoji.fromUnicode("❌"))
+     .addOption("REMOVE", "0", Emoji.fromUnicode("❌"))
      .setRequiredRange(0, 1)
      .build();
     }

@@ -16,7 +16,7 @@ public class roles extends ListenerAdapter {
   public void onStringSelectInteraction(@NotNull StringSelectInteractionEvent event) {
     Guild g = event.getGuild();
     Member member = event.getMember();
-    // remove all color roles before procceding
+    // roles you want you clear from the user each interaction
     List<String> roles = List.of(
         "1307766379234988153",
         "1308846283766894624",
