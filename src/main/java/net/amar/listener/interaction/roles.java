@@ -12,23 +12,13 @@ import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionE
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
 public class roles extends ListenerAdapter {
-static String r1 ="1307766379234988153";
-static String r2 ="";
-static String r3 ="";
-static String r4 ="";
-static String r5 ="";
-static String r6 ="";
-static String r7 ="";
-static String r8 ="";
-static String r9 ="";
-
   @Override
   public void onStringSelectInteraction(@NotNull StringSelectInteractionEvent event) {
     Guild g = event.getGuild();
     Member member = event.getMember();
     // remove all color roles before procceding
     List<String> roles = List.of(
-        "",
+        "1307766379234988153",
         "1308846283766894624",
         "1309075735272488960",
         "1306218380306681916",
