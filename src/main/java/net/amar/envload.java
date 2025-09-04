@@ -12,4 +12,7 @@ public class envload {
     public static String getPrefix(){
         return load.get("BOT_PREFIX");
     }
+    public static String ownerID(){
+        return load.get("OWNER_ID");
+    }
 }

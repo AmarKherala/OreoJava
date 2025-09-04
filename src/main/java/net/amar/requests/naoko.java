@@ -15,6 +15,8 @@ import java.util.Random;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
+import net.amar.log;
+
 public class naoko {
 
     static Random ran = new Random();
@@ -28,6 +30,7 @@ public class naoko {
             int in = ran.nextInt(arr.length());
             return arr.get(in).toString();
         } catch (IOException e) {
+            log.error("No JSONArray found in the provided filePath..");
             return null;
         }
     }
