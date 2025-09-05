@@ -1,0 +1,19 @@
+Make a server.json file right here with this template
+
+{
+  "ID_orange": "orange role id, required",
+  "ID_red": "red role id, required",
+  "ID_black": "black role id, required",
+  "ID_yellow": "yellow role id, required",
+  "ID_purple": "purple role id, required",
+  "ID_lightblu": "lightblue role id, required",
+  "ID_green": "green role id, required",
+  "ID_pink": "pink role id, required",
+  "ID_catgirl": ""
+}
+
+"required" means you HAVE to provide that color role ID
+otherwise the menu wont build
+
+make sure to LEAVE ID_catgirl empty with no text if you dont wamt a color
+called "catgirl"

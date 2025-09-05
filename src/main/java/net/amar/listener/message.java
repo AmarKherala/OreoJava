@@ -5,6 +5,7 @@ import java.time.OffsetDateTime;
 
 import net.amar.comps.rolesSelectMenu;
 import net.amar.envload;
+import net.amar.log;
 import net.amar.requests.gary;
 import net.amar.requests.naoko;
 import net.dv8tion.jda.api.EmbedBuilder;
@@ -21,6 +22,9 @@ public class message extends ListenerAdapter {
 
   @Override
   public void onMessageReceived(MessageReceivedEvent event) {
+
+    if(event.getAuthor().isBot()) return;
+
     String userMessage = event.getMessage().getContentRaw();
 
     if (userMessage.equalsIgnoreCase(prefix + "gary")) {
@@ -52,7 +56,11 @@ public class message extends ListenerAdapter {
     em.setDescription("Select the color you like by clicking the button bellow.");
     em.setColor(Color.BLUE);
     em.setTimestamp(OffsetDateTime.now());
-
+    try {
     event.getChannel().sendMessageEmbeds(em.build()).addActionRow(menu.colorMenu()).queue();
+  } catch (IllegalArgumentException e){
+    log.error("Failed to send message");
+    log.info("Maybe embed componets are empty?");
   }
+ }
 }

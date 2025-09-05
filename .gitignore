@@ -1,5 +1,6 @@
-# ignore .env
+# ignore .env/.json
 .env
+*.json
 
 # ignore test and target
 test
