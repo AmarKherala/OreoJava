@@ -22,7 +22,8 @@ color_echo() {
 start_bot() {
     color_echo "94" "[*] Deleting old compiled classes..."
     rm -rf "$OUT_DIR/amar"
-
+    # kill ongoing proccesses
+    pkill -f net.amar
     color_echo "94" "[*] Compiling..."
     javac -cp "lib/*" -d "$OUT_DIR" $(find "$SRC_DIR" -name "*.java")
 

@@ -4,6 +4,7 @@ import java.util.EnumSet;
 
 import net.amar.listener.command;
 import net.amar.listener.interaction.roles;
+import net.amar.listener.joinsleaves;
 import net.amar.listener.message;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
@@ -30,7 +31,8 @@ public class main {
           .addEventListeners(
               new message(),
               new command(),
-              new roles())
+              new roles(),
+              new joinsleaves())
           .build();
     } catch (Exception e) {
       log.error("Something went wrong...couldnt build JDA instance");

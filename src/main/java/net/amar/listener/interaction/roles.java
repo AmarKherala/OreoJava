@@ -17,7 +17,6 @@ public class roles extends ListenerAdapter {
 
   private final jsonload load = new jsonload();
 
-  @SuppressWarnings("unlikely-arg-type")
   @Override
   public void onStringSelectInteraction(@NotNull StringSelectInteractionEvent event) {
     load.readFile();
