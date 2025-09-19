@@ -13,7 +13,7 @@ import net.dv8tion.jda.api.interactions.InteractionContextType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
-public class main {
+public class mainClass {
 
   private static JDA jda;
 
@@ -26,7 +26,6 @@ public class main {
     try {
       jda = JDABuilder.createDefault(botToken)
           .setActivity(Activity.playing("I DONT KNOW WHAT TO DO WITH MY LIFE"))
-          .setIdle(true)
           .enableIntents(EnumSet.allOf(GatewayIntent.class))
           .addEventListeners(
               new message(),
