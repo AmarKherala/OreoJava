@@ -8,6 +8,7 @@ import org.jetbrains.annotations.NotNull;
 import net.amar.commandz.commandInterface;
 import net.amar.commandz.infoz.botinfo;
 import net.amar.commandz.infoz.serverinfo;
+import net.amar.commandz.moderation.kick;
 import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
@@ -18,6 +19,7 @@ public class command extends ListenerAdapter {
     public command() {
         commands.put("serverinfo", new serverinfo());
         commands.put("botinfo", new botinfo());
+        commands.put("kick", new kick());
     }
 
     @Override

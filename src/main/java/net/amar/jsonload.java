@@ -17,6 +17,7 @@ public class jsonload {
     public String lightblue;
     public String green;
     public String catgirl;
+    public String blue;
 
     public void readFile() {
         try {
@@ -32,6 +33,7 @@ public class jsonload {
             lightblue = obj.optString("ID_lightblu", null);
             green     = obj.optString("ID_green", null);
             catgirl   = obj.optString("ID_catgirl", null);
+            blue      = obj.optString("ID_Blue", null);
 
         } catch (IOException e) {
             log.error("Couldn't read/find file server.json");

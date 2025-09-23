@@ -3,6 +3,7 @@ package net.amar.listener;
 import java.awt.Color;
 import java.time.OffsetDateTime;
 
+import net.amar.log;
 import net.dv8tion.jda.api.EmbedBuilder;
 import net.dv8tion.jda.api.entities.Guild;
 import net.dv8tion.jda.api.entities.Member;
@@ -12,6 +13,7 @@ import net.dv8tion.jda.api.events.guild.member.GuildMemberJoinEvent;
 import net.dv8tion.jda.api.events.guild.member.GuildMemberRemoveEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+@SuppressWarnings("null")
 public class joinsleaves extends ListenerAdapter {
   
   private final long wc = 1307399596074467389L;
@@ -31,7 +33,7 @@ public class joinsleaves extends ListenerAdapter {
     em.setTimestamp(memberJoined.getTimeJoined());
     welcome.sendMessageEmbeds(em.build()).queue();
   } catch (Exception e){
-    e.printStackTrace();
+    log.error("gay");
   }
  }   
   @Override
@@ -49,7 +51,7 @@ public class joinsleaves extends ListenerAdapter {
     em.setTimestamp(OffsetDateTime.now());
     welcome.sendMessageEmbeds(em.build()).queue();
   } catch (Exception a) {
-    a.printStackTrace();
+    log.error("gay");
    }
   }
 }

@@ -8,8 +8,11 @@ import net.amar.listener.joinsleaves;
 import net.amar.listener.message;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
+import net.dv8tion.jda.api.Permission;
 import net.dv8tion.jda.api.entities.Activity;
 import net.dv8tion.jda.api.interactions.InteractionContextType;
+import net.dv8tion.jda.api.interactions.commands.DefaultMemberPermissions;
+import net.dv8tion.jda.api.interactions.commands.OptionType;
 import net.dv8tion.jda.api.interactions.commands.build.Commands;
 import net.dv8tion.jda.api.requests.GatewayIntent;
 
@@ -50,7 +53,13 @@ public class mainClass {
     jda.updateCommands()
         .addCommands(
             Commands.slash("serverinfo", "get info about server"),
-            Commands.slash("botinfo", "info about the bot").setContexts(InteractionContextType.ALL))
+            Commands.slash("botinfo", "info about the bot").setContexts(InteractionContextType.ALL),
+            
+            Commands.slash("kick","kick a bad guy")
+            .addOption(OptionType.USER, "user", "user to kick")
+            .addOption(OptionType.STRING, "reason", "why kick this guy")
+            .setDefaultPermissions(DefaultMemberPermissions.enabledFor(Permission.KICK_MEMBERS))
+            )
         .queue(success -> log.info("Commands loaded successfully"), failuer -> log.error("Failed to load commands"));
   }
 }

@@ -32,7 +32,8 @@ public class roles extends ListenerAdapter {
         load.orange,
         load.pink,
         load.catgirl,
-        load.red);
+        load.red,
+        load.blue);
     String roleId = event.getValues().get(0);
     List<Role> memberRoles = new ArrayList<>(member.getRoles());
 

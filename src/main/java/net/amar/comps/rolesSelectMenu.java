@@ -24,6 +24,7 @@ public class rolesSelectMenu {
      safeAdd(menu, "PINK", load.pink, "💓");
      safeAdd(menu, "GREEN", load.green, "🟩");
      safeAdd(menu, "CATGIRL", load.catgirl, "🐱");
+     safeAdd(menu, "BLUE", load.blue, "💙");
      menu.addOption("REMOVE", "removeMyFuckingRoles", Emoji.fromUnicode("❌"));
      return menu.build();
             }
