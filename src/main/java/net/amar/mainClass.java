@@ -18,7 +18,7 @@ import net.dv8tion.jda.api.requests.GatewayIntent;
 
 public class mainClass {
 
-  private static JDA jda;
+private static JDA jda;
 
   public static void main(String[] args) throws InterruptedException {
     String botToken = envload.getToken();
@@ -28,7 +28,7 @@ public class mainClass {
     }
     try {
       jda = JDABuilder.createDefault(botToken)
-          .setActivity(Activity.playing("I DONT KNOW WHAT TO DO WITH MY LIFE"))
+          .setActivity(Activity.customStatus("geeee"))
           .enableIntents(EnumSet.allOf(GatewayIntent.class))
           .addEventListeners(
               new message(),

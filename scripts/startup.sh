@@ -7,7 +7,7 @@
 
 SRC_DIR="src/main"
 OUT_DIR="out"
-MAIN_CLASS="net.amar.main"
+MAIN_CLASS="net.amar.mainClass"
 
 mkdir -p $OUT_DIR
 
@@ -23,7 +23,7 @@ start_bot() {
     color_echo "94" "[*] Deleting old compiled classes..."
     rm -rf "$OUT_DIR/amar"
     # kill ongoing proccesses
-    pkill -f net.amar
+    pkill -f $MAIN_CLASS
     color_echo "94" "[*] Compiling..."
     javac -cp "lib/*" -d "$OUT_DIR" $(find "$SRC_DIR" -name "*.java")
 

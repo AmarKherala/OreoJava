@@ -13,6 +13,7 @@ import net.dv8tion.jda.api.entities.Role;
 import net.dv8tion.jda.api.events.interaction.component.StringSelectInteractionEvent;
 import net.dv8tion.jda.api.hooks.ListenerAdapter;
 
+@SuppressWarnings("")
 public class roles extends ListenerAdapter {
 
   private final jsonload load = new jsonload();
@@ -41,20 +42,20 @@ public class roles extends ListenerAdapter {
       Role role = g.getRoleById(roleId);
       memberRoles.removeIf(r -> roles.contains(r.getId()));
       memberRoles.add(role);
-      event.deferReply(true).queue(hook -> g.modifyMemberRoles(member, memberRoles).queue(
+      event.reply("Successfully uodated roles!").setEphemeral(true).queue(hook -> g.modifyMemberRoles(member, memberRoles).queue(
           success -> event.getHook().sendMessage("Color added successfully!").setEphemeral(true),
           failure -> event.getHook().sendMessage("Failed to add color.").setEphemeral(true)));
     }
     // remove all colors
     else if (event.getValues().get(0).equals("removeMyFuckingRoles")){
       memberRoles.removeIf(r -> roles.contains(r.getId()));
-      event.deferReply(true)
+      event.reply("thinking..").setEphemeral(true)
           .queue(hook -> g.modifyMemberRoles(member, memberRoles).queue(
             success ->{ log.info("Removed role from member");
-          event.getHook().sendMessage("removed all roles successfully!").setEphemeral(true);},
+          event.getHook().sendMessage("removed all roles successfully!").setEphemeral(true).queue();},
           failure ->{
             log.error("Failed to remove member roles");
-            event.getHook().sendMessage("Failed to remove roles...").setEphemeral(true);
+            event.getHook().sendMessage("Failed to remove roles...").setEphemeral(true).queue();
           }
           ));
     }
