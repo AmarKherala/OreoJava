@@ -10,3 +10,8 @@ target
 # to make the repo clean
 out
 lib
+
+# randoms
+.settings/
+.classpath
+.project
